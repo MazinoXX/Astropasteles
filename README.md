@@ -3,7 +3,11 @@ Html de una pasteleria y una intro a CSS
 
 ## Logo de la pasteleria
 Se uso canva para el logo de los Astropasteles
+
+---
 ![](https://raw.githubusercontent.com/MazinoXX/Astropasteles/main/Astropasteles.png)
+
+
 
 ## Paginas 
 Se uso html para la pagina principal, la pagina para ordenar y la pagina de el resumen del pedido para el repostero
