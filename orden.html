@@ -5,68 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astropasteles</title>
+    
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: antiquewhite;
+        }
+
+        body {
+           
+            background-color: palevioletred;
+        }
+
+        /* Estilo de header */
+        .titulo {
+            color: rgb(128, 0, 75);
+        }
+
+        .centrar{
+            text-align: center;
+        }
+
+        .fondo{
+           background-color: aliceblue; 
+        }
+
+       
+        
+    </style>
 </head>
+
 <body>
 
-    <h1>Proporcione sus datos de contacto</h1>
-    <label for="nombreCliente">Nombre</label><br>
-    <input type="text" id="nombreCliente" name="nombreCliente"><br>
+    <section class="fondo">  
+        <div>
+             <h1 class="titulo centrar">Proporcione sus datos de contacto</h1>
+             <label for="nombreCliente">Nombre:</label>
+             <input type="text" id="nombreCliente" name="nombreCliente"><br>
 
-    <label for="correo1">Correo electronico</label><br>
-    <input type="email" id="correoCliente" name="correoCliente"><br>
+            <label  for="correo1">Correo:</label>
+             <input type="email" id="correoCliente" name="correoCliente"><br>
 
-    <label for="tel1">Teléfono</label><br>
-    <input type="tel" id="telCliente" name="telCliente" maxlength="10"><br><br>
+            <label for="tel1">Teléfono:</label>
+             <input type="tel" id="telCliente" name="telCliente" maxlength="10"><br><br>
+        
+        </div>
+    </section> 
 
-    <h1>Ordena tu pastel</h1>
-
-    <h3>Selecciona alguno de nuestros flagships:</h3><br>
+    <section class="fondo">
+        <div>
+        
+            <h1 class="titulo centrar">Ordena tu pastel</h1>
+            <h3>Selecciona alguno de nuestros flagships:</h3><br>
     
-    <label for="Via 3 leches">Via 3 leches</label><br>
-    <label for="cantidadVia">Ingresa la cantidad de pasteles</label><br>
-    <input type="number" id="cantidadVia" name="cantidadVia"><br>
+            <label for="Via 3 leches">Via 3 leches</label><br>
+            <label for="cantidadVia">Ingresa la cantidad de pasteles</label><br>
+            <input type="number" id="cantidadVia" name="cantidadVia"><br>
 
-    <label for="ChocoaMarte">ChocoaMarte</label><br>
-    <label for="cantidadChocoMarte">Ingresa la cantidad de pasteles</label><br>
-    <input type="number" id="cantidadChocoMarte" name="cantidadChocoMarte"><br>
+            <label for="ChocoaMarte">ChocoaMarte</label><br>
+            <label for="cantidadChocoMarte">Ingresa la cantidad de pasteles</label><br>
+            <input type="number" id="cantidadChocoMarte" name="cantidadChocoMarte"><br>
 
-    <label for="CheeseMoon">CheeseMoon</label><br>
-    <label for="cantidadCheese">Ingresa la cantidad de pasteles</label><br>
-    <input type="number" id="cantidadCheese" name="cantidadCheese"><br>
+            <label for="CheeseMoon">CheeseMoon</label><br>
+            <label for="cantidadCheese">Ingresa la cantidad de pasteles</label><br>
+            <input type="number" id="cantidadCheese" name="cantidadCheese"><br>
+        
+        </div>
+    </section>
 
-    <h3>O puedes crear tu propio pastel</h3>
+    <section class="fondo">
+        <div>
+        
+            <h1 class="titulo centrar">O puedes crear tu propio pastel</h1>
 
-    <h4>Tipo de biscocho:</h4><br>
-    <input type="radio" id="Vainilla" name="biscocho" value="Vainilla">
-    <label for="Vainalla">Vainilla</label><br>
-    <input type="radio" id="Chocolate" name="biscocho" value="Chocolate">
-    <label for="Chocolate">Chocolate</label><br>
-    <input type="radio" id="Mamoleado" name="biscocho" value="Mamoleado">
-    <label for="Mamoleado">Marmoleado</label><br><br>
+            <h3>Tipo de biscocho:</h3><br>
+            <input type="radio" id="Vainilla" name="biscocho" value="Vainilla">
+            <label for="Vainalla">Vainilla</label><br>
+            <input type="radio" id="Chocolate" name="biscocho" value="Chocolate">
+            <label for="Chocolate">Chocolate</label><br>
+            <input type="radio" id="Mamoleado" name="biscocho" value="Mamoleado">
+            <label for="Mamoleado">Marmoleado</label><br><br>
 
-    <h4>Tipo de relleno:</h4><br>
-    <input type="radio" id="fresa" name="relleno" value="fresa">
-    <label for="fresa">Fresas</label><br>
-    <input type="radio" id="duraznos" name="relleno" value="duraznos">
-    <label for="durazno">Durazno</label><br>
-    <input type="radio" id="frutosRojos" name="relleno" value="frutosRojos">
-    <label for="frutosRojos">Frutos Rojos</label><br><br>
+            <h4>Tipo de relleno:</h4><br>
+            <input type="radio" id="fresa" name="relleno" value="fresa">
+            <label for="fresa">Fresas</label><br>
+            <input type="radio" id="duraznos" name="relleno" value="duraznos">
+            <label for="durazno">Durazno</label><br>
+            <input type="radio" id="frutosRojos" name="relleno" value="frutosRojos">
+            <label for="frutosRojos">Frutos Rojos</label><br><br>
 
-    <h4>Tipo de cubierta:</h4><br>
-    <input type="radio" id="Fondant" name="cubierta" value="Fondant">
-    <label for="Fondant">Fondant</label><br>
-    <input type="radio" id="CremaPastelera" name="cubierta" value="CremaPastelera">
-    <label for="CremaPastelera">Crema Pastelera</label><br>
-    <input type="radio" id="ChocolateFundido" name="cubierta" value="ChocolateFundido">
-    <label for="ChocolateFundido">Chocolate Fundido</label><br><br>
+            <h4>Tipo de cubierta:</h4><br>
+            <input type="radio" id="Fondant" name="cubierta" value="Fondant">
+            <label for="Fondant">Fondant</label><br>
+            <input type="radio" id="CremaPastelera" name="cubierta" value="CremaPastelera">
+            <label for="CremaPastelera">Crema Pastelera</label><br>
+            <input type="radio" id="ChocolateFundido" name="cubierta" value="ChocolateFundido">
+            <label for="ChocolateFundido">Chocolate Fundido</label><br><br>
 
-    <h2>Te gustaria alguna dedicatoria en el pastel</h2>
-    
-    <input type="text" id="dedicatoria" name="dedicatoria"><br><br>
+        </div>
+    </section>
 
-    <input type="button" id="boton1" name="boton1" value="Ordenar" onclick="alert('Gracias por su preferencia')"><br><br>
-    <input type="reset">
+    <section> 
+        <div class="centrar fondo">
+            <h1 class="titulo centrar">Te gustaria alguna dedicatoria en el pastel</h1>    
+            <input class="centrar" type="text" id="dedicatoria" name="dedicatoria"><br><br>
+            <input type="button" id="boton1" name="boton1" value="Ordenar" onclick="alert('Gracias por su preferencia')"><br><br>
+            <input type="reset">
+        </div>
+    </section>
 
+   
     
 
 
