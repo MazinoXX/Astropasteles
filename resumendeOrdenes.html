@@ -5,56 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astropasteles</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: antiquewhite;
+        }
+
+        body {
+           
+            background-color: palevioletred;
+        }
+
+        /* Estilo de header */
+        .titulo {
+            color: rgb(128, 0, 75);
+        }
+
+        .centrar{
+            text-align: center;
+        }
+
+        .fondo{
+           background-color: aliceblue; 
+        }
+        .texto{
+            color: lightcoral;
+        }
+
+       
+        
+    </style>
 </head>
+
 <body>
 
-    <h1>Resumen de ordenes</h1>
+    <section class="fondo">  
+        <div>
+             <h1 class="titulo">Datos del pedido</h1>
+             <label for="nombreCliente">Nombre:</label>
+             <input type="text"  placeholder="Maria Perez" id="nombreCliente" name="nombreCliente"><br>
 
-    <table>
-        <tr>
-            <td></td>
-            <th>Cantidad</th>
-            <th>Disponible</th>
-        </tr>
-        <tr>
-            <td>Tipo biscocho</td>
-            <td><input type="text" id="Input1" name="Input1"></td>
-            <td><input type="text" id="Input1" name="Input1"></td>
-        </tr>
-        <tr>
-            <td>Tipo de relleno</td>
-            <td><input type="text" id="Input1" name="Input1"></td>
-            <td><input type="text" id="Input1" name="Input1"></td>
-        </tr>
-        <tr>
-            <td>Tipo de cubierta</td>
-            <td><input type="text" id="Input1" name="Input1"></td>
-            <td><input type="text" id="Input1" name="Input1"></td>
-        </tr>
-        <tr>
-            <td>Dedicatoria</td>
-            <td><input type="text" id="Input1" name="Input1"></td>
-            <td><input type="text" id="Input1" name="Input1"></td>
-        </tr>
-    </table>
-    <br>
-    <table>
-        <tr>
-            <th>Astropasteles</th>
-            <th>Contacto</th>
-            <th>Horario de atención</th>
-        </tr>
-        <tr>
-            <td>Alta Reposteria</td>
-            <td>Omar Trujillo</td>
-            <td>Lunes a Sabado</td>
-        </tr>
-        <tr>
-            <td>Plaza Coacalco</td>
-            <td>Dolores Razo</td>
-            <td>9:00 a 16:00</td>
-        </tr>
-    </table>
+            <label for="correo1">Correo:</label>
+             <input type="email"  placeholder="maria17@gmail.com" id="correoCliente" name="correoCliente"><br>
+
+            <label for="tel1">Teléfono:</label>
+             <input type="tel"  placeholder="5534567823" id="telCliente" name="telCliente" maxlength="10"><br><br>
+        
+        </div>
+    </section> 
+
+    <section class="fondo">  
+        <div>
+
+            <h1 class="titulo">Resumen de orden</h1>
+
+            <table>
+                <tr>
+                    <td></td>
+                    <th>Cantidad</th>
+                    <th>Disponible</th>
+                </tr>
+                <tr>
+                    <td>Tipo biscocho</td>
+                    <td><input type="text" placeholder="Chocolate" id="tipoBiscocho" name="tipoBiscocho"></td>
+                    <td><input type="text" placeholder="3 preparaciones" id="bischoDisponible" name="bischoDisponible"></td>
+                </tr>
+                <tr>
+                    <td>Tipo de relleno</td>
+                    <td><input type="text" placeholder="Fresas" id="tipoRelleno" name="tipoRelleno"></td>
+                    <td><input type="text" placeholder="Need stock" id="rellenoDisponible" name="rellenoDisponible"></td>
+                </tr>
+                <tr>
+                    <td>Tipo de cubierta</td>
+                    <td><input type="text" placeholder="Chocolate Fundido" id="tipoCubierta" name="tipoCubierta"></td>
+                    <td><input type="text" placeholder="Need stock" id="cubiertaDisponible" name="cubiertaDisponible"></td>
+                </tr>
+                <tr>
+                    <td>Dedicatoria</td>
+                    <td><input type="text" placeholder="Feliz Navidad" id="Dedicatoria" name="Dedicatoria"></td>
+                    
+                </tr>
+            </table>
+   
+        </div>
+    </section> 
+
+    <section class="fondo">  
+        <div>
+            <h1 class="titulo">Contacto</h1>
+            <table>
+                <tr>
+                    <th>Astropasteles</th>
+                    <th>Contacto</th>
+                    <th>Horario de atención</th>
+                </tr>
+                <tr>
+                    <td>Alta Reposteria</td>
+                    <td>Omar Trujillo</td>
+                    <td>Lunes a Sabado</td>
+                </tr>
+                <tr>
+                    <td>Plaza Coacalco</td>
+                    <td>Dolores Razo</td>
+                    <td>9:00 a 16:00</td>
+                </tr>
+            </table>
+        </div>
+    </section> 
 
    
 
